@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Product Sans Black Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Black Regular'), url('fonts/ProductSans-Black.woff') format('woff');
+    }
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+}
+
+*{
+    font-family:'Product Sans Black Regular';
+    font-weight:normal;
+}
+
+html{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    bottom: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flexbox;
+    position: fixed;
+    margin-top: 7px;
+}
+
+.nav{
+    background-color: rgba(59, 59, 59, 0.438);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 10px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+
+#title{
+    font-size: 23px;
+    margin: 0 0;
+}
+
+h1{
+    text-size-adjust: 80%;
+}
+
+#content{
+    min-height: 100%;
+}
+
+#feet{
+    bottom: 0;
+}

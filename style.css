@@ -1,0 +1,28 @@
+.fpt{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    margin: 0;
+    text-align: left;
+}
+
+h1.text{
+    font-size: 10vw;
+}
+
+h2.text{
+    font-size: 8vw;
+}
+
+@media screen and (pointer:none) {
+    html{
+        background-color: cornsilk;
+    }
+}
