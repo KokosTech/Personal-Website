@@ -1,11 +1,8 @@
-.fpt{
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
+.content{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .text{

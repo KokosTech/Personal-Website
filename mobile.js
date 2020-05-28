@@ -9,6 +9,10 @@ function mobile(){
         for(var i = 0; i < elem.length; (i + 1)){
             elem[i].remove();
         }
+
+        var hh = document.createElement('div');
+        hh.setAttribute("id" , 'hh');
+
         var con = document.createElement('div');
         con.setAttribute('class', 'container');
         con.style.bottom = '0';
@@ -16,6 +20,7 @@ function mobile(){
 
         var navbar = document.createElement('div');
         navbar.setAttribute('class', 'nav');
+        navbar.setAttribute('id', 'navy');
         navbar.style.fontSize = '23px';
         
         var node = document.createElement("a");
@@ -28,8 +33,10 @@ function mobile(){
         node.setAttribute('href' , hr2);
         navbar.appendChild(node);
         
-        con.appendChild(navbar); 
-        document.getElementById('content').appendChild(con);
+        navbar.appendChild(node); 
+        con.appendChild(navbar);
+        hh.appendChild(con);
+        document.getElementById('body').appendChild(hh);
 
 
         return true;

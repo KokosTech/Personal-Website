@@ -1,3 +1,4 @@
+console.log(mkbhd)
 var clear = false;
 var num = 0
 function myFunction(elem , input) {
@@ -12,6 +13,9 @@ function myFunction(elem , input) {
                 l.appendChild(h1);
                 h1.innerHTML = "Tasks:";
                 var btn = document.createElement("BUTTON");
+                if(mkbhd){
+                    btn.style.width = "100%";
+                }
                 btn.innerHTML = "Clear";
                 btn.setAttribute("onclick" , "cls()");
                 btn.style.cursor = 'pointer';
@@ -23,8 +27,8 @@ function myFunction(elem , input) {
                 if(mkbhd){
                     vw = document.getElementById('input').offsetWidth;
                     dv.style.width = vw + 'px';
-                    l.style.width = "90%";
-                    h1.style.fontSize = '4.8vw'
+                    l.style.width = "95%";
+                    h1.style.fontSize = '5vw'
                 } else {
                     for(var i = 0; i < st.length; ++i){
                         st[i].style.fontSize = "3vw"
@@ -37,7 +41,7 @@ function myFunction(elem , input) {
             node.setAttribute("id", "task" + num);
             node.setAttribute("class", "tasken");
             if(mkbhd){
-                node.style.fontSize = '4.8vw';
+                node.style.fontSize = '5vw';
             }
             var textnode = document.createTextNode(input);
             node.appendChild(textnode);

@@ -24,6 +24,7 @@ html{
     color: white;
     height: 100%;
     width: 100%;
+    
 }
 
 body{
@@ -31,19 +32,15 @@ body{
     height: 100%;
 }
 
-header{
+#hh{
     display: flex;
     justify-content: center;
-}
-
-footer{
-    bottom: 0;
+    
 }
 
 .container{
     width: 80%;
     margin: 0 auto;
-    display: flexbox;
     position: fixed;
     margin-top: 7px;
 }
@@ -71,14 +68,6 @@ footer{
     margin: 0 0;
 }
 
-h1{
-    text-size-adjust: 80%;
-}
-
 #content{
-    min-height: 100%;
-}
-
-#feet{
-    bottom: 0;
+    height: 100%;
 }
