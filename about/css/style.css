@@ -1,0 +1,12 @@
+#content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+img{
+    height: 70%;
+    margin: 15px;
+    border-radius: 7px;
+}
