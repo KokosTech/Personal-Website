@@ -1,6 +1,6 @@
 html{
-    background-color: black;
-    color: white;
+    background-color: var(--color-secondary);
+    color: var(--font-color);
     font-family: "Product Sans Black Regular";
     height: 100%;
     

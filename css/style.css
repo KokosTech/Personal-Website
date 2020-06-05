@@ -17,9 +17,3 @@ h1.text{
 h2.text{
     font-size: 8vw;
 }
-
-@media screen and (pointer:none) {
-    html{
-        background-color: cornsilk;
-    }
-}

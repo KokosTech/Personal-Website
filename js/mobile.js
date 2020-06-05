@@ -17,6 +17,8 @@ function mobile(){
         con.setAttribute('class', 'container');
         con.style.bottom = '0';
         con.style.marginBottom = '7px';
+        
+        var cons = document.getElementsByClassName('container');
 
         var navbar = document.createElement('div');
         navbar.setAttribute('class', 'nav');
@@ -38,6 +40,9 @@ function mobile(){
         hh.appendChild(con);
         document.getElementById('body').appendChild(hh);
 
+        for(var i = 0; i < cons.length; ++i){
+            cons[i].style.width = '95%'
+        }
 
         return true;
     }
