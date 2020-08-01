@@ -9,3 +9,11 @@ document.getElementById('todo').addEventListener('click' , function(){
 document.getElementById('sp').addEventListener('click' , function(){
     window.open('stopwatch' , '_self')
 });
+
+document.getElementById('yt-bg').addEventListener('click' , function(){
+    window.open('https://www.youtube.com/channel/UCpjKhnncTLm-_68Z_qeCmaA' , '_self')
+});
+
+document.getElementById('yt-en').addEventListener('click' , function(){
+    window.open('https://www.youtube.com/channel/UCPsylmYX1-WpAwztLoQx9Nw' , '_self')
+});

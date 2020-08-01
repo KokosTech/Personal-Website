@@ -1,0 +1,108 @@
+body{
+    height: unset;
+}
+
+#content{
+    height: unset;
+}
+
+/* Contact  */
+
+#cont{
+    margin-top: 10px;
+}
+
+#c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fc{
+    margin: 10px;
+    width: 18%;
+    min-width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+}
+
+.fc img {
+    height: 100px;
+    border-radius: unset;
+}
+
+.fc p{
+    font-size: 17px;
+}
+
+/* Bio */
+
+#bio{
+   width: 100%; 
+   margin-right: 10px;
+}
+
+#bioh{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#qi img{
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+#qi p{
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+#bio p{
+    font-family: 'Product Sans Regular';
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Global */
+
+@media screen and (max-width: 800px){
+    #contact{
+        flex-direction: column;
+    }
+
+    #portrait{
+        width: unset;
+        margin-right: 0;
+    }
+    
+    #portrait img{
+        width: 100%;
+    }
+    
+    #cont{
+        margin-top: 10px;
+        width: unset;
+    }
+
+    #bio{
+        width: unset;
+        margin: 0 0;
+        margin-top: 10px;
+    }
+
+    #bioh{
+        flex-direction: column-reverse;
+    }
+}

@@ -10,20 +10,24 @@ function mobile(){
             elem[i].remove();
         }
 
-        var hh = document.createElement('div');
-        hh.setAttribute("id" , 'hh');
+        var hhi = document.createElement('div');
+        hhi.setAttribute("class" , 'hhi');
 
         var con = document.createElement('div');
-        con.setAttribute('class', 'container');
+        con.setAttribute('class', 'container div');
         con.style.bottom = '0';
+        con.style.position = 'fixed'
+        con.style.margin = '0 0';
+        con.style.padding = '0 0';
+        con.style.paddingBottom = '10px';
+        con.style.paddingTop = '10px';
         con.style.marginBottom = '7px';
-        
         var cons = document.getElementsByClassName('container');
 
         var navbar = document.createElement('div');
         navbar.setAttribute('class', 'nav');
         navbar.setAttribute('id', 'navy');
-        navbar.style.fontSize = '23px';
+        navbar.style.fontSize = '25px';
         
         var node = document.createElement("a");
         node.innerHTML = text1;
@@ -37,12 +41,16 @@ function mobile(){
         
         navbar.appendChild(node); 
         con.appendChild(navbar);
-        hh.appendChild(con);
-        document.getElementById('body').appendChild(hh);
-
+        hhi.appendChild(con);
+        var bb = document.getElementById('body');
+        bb.style.marginBottom = '70px'
+        bb.appendChild(hhi);
+        bb.style.marginBottom = '70px'
         for(var i = 0; i < cons.length; ++i){
             cons[i].style.width = '95%'
         }
+
+
 
         return true;
     }
