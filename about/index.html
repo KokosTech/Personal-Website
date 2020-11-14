@@ -2,30 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>About</title>
 
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="../css/global.css?v=2.0">
+    <link rel="stylesheet" href="css/about.css?v=2.0">
     <link rel="icon" href="../img/logo.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/colors.css?v=2.0">
 </head>
 <body id="body">
-    <header class="hh" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="250">
+    <header class="hh" data-aos="fade-right">
         <div class="hhi">
             <div class="div sqr">
-                <img id='lg' src="../img/logo-site-trans-w.png">
+                <img id='lg' class="logos" src="../img/logo-site-trans-w.png">
             </div>
             <div class="container div">
-                <div id="navy" class="nav" data-aos="zoom-in-up">
+                <div id="navy" class="nav">
                     <a class="navlink" href="..">Home</a>
                     <h3 id="title">About</h3>
                     <a class="navlink" href="../projects">Projects</a>
                 </div>
             </div>
             <div id="dw_btn" class="div sqr">
-                <img id="toggle" src="../img/sun.png">
+                <img id="toggle" class="logos" src="../img/settings.png">
             </div>
         </div>
     </header>
@@ -43,38 +44,40 @@
                 <p>And now in 2020, I have graduated 8the grade with GPA 4.0 (6/6) at TUES. And I know it is going to get harder every year, but I am ready to fight everything. And win at the end! Because the most important thing in the world is to:</p>
                 <p style="font-family: 'Product Sans Black Regular'">Never give up!</p>
             </div>
-            <div id="qi" class="div bio" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="150">
+            <div id="qi" class="div bio" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250">
                 <h1>Quick info:</h1>
-                <div style="margin-top: 10px; margin-bottom: 10px;">
-                    <img src="img/placeholder.jpg">
+                <div id="pp" style="margin-top: 10px; margin-bottom: 10px;">
+                    <img src="img/placeholder.png" alt="Kaloyan Doychinov">
                 </div>
                 <p>Name: Kaloyan Doychinov</p>
-                <p>Age: 14</p>
+                <p>Age: 15</p>
                 <p>Occupation: Student at TUES Bulgaria</p>
-                <p>Skills: C, C++, HTML/CSS, JS, PHP, MySQL, Adobe Premiere Pro CC</p>
+                <p>Skills:</p>
+                <div id="skills">
+                    <div id="l_blue_s" class="skills">C</div> <div id="blue_s" class="skills">C++</div> <div id="orange_s" class="skills">HTML/CSS</div> <div id="yellow_s" class="skills">JS</div> <div id="blue_s" class="skills">PHP</div> <div id="l_blue_s" class="skills">MySQL</div> <div id="purple_s" class="skills">Adobe Premiere Pro CC</div>
+                </div> 
             </div>
         </div>
-        <div class="div" id="cont" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="150">
+        <div class="div" id="cont" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="350">
             <h1>Contact me on:</h1>
             <div id="c">
-                <div class="div fc">
-                    <a href="mailto: kaloyan@kaloyan.tech"><img id="email" src="img/email/email-w.png" alt=""></a>
+                <div class="div fc divbtn">
+                    <a href="mailto: kaloyan@kaloyan.tech"><img id="email" class="logos" src="img/email/email-w.png" alt="email icon"></a>
                 </div>
-                <div class="div fc">
-                    <a href="https://linkedin.com/in/kaloyand"><img id="in" src="img/linkedin/in-w.png" alt=""></a>
+                <div class="div fc divbtn">
+                    <a href="https://linkedin.com/in/kaloyand"><img id="in" class="logos" src="img/linkedin/in-w.png" alt="linkedin icon"></a>
                 </div>
-                <div class="div fc">
-                    <a href="https://twitter.com/KokosTech"><img id="ta" src="img/ta/ta-w.png" alt=""></a>
+                <div class="div fc divbtn">
+                    <a href="https://twitter.com/KokosTech"><img id="ta" class="logos" src="img/ta/ta-w.png" alt="twitter icon"></a>
                 </div>
-                <div class="div fc">
-                    <a href="https://instagram.com/KokosTech"><img id="insta" src="img/instagram/insta_w.png" alt=""></a>
+                <div class="div fc divbtn">
+                    <a href="https://instagram.com/KokosTech"><img id="insta" class="logos" src="img/instagram/insta_w.png" alt="instagram icon"></a>
                 </div>
             </div>
         </div>
     </div>
     <script src="../js/mobile.js"></script>
     <script src="../js/style.js"></script>
-    <script src="js/cIcon.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

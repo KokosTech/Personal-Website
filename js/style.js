@@ -1,13 +1,6 @@
 var themed;
 
-let tog = document.getElementById('toggle')
-let logo = document.getElementById('lg')
-
-let strlw = logo.getAttribute('src');
-let strlb = strlw.replace(/w/g , 'b');
-
-let strtw = tog.getAttribute('src');
-let strtb = strtw.replace('sun' , 'moon');
+let logos = document.getElementsByClassName('logos')
 
 document.getElementById('lg').addEventListener('click' , function(){
     window.open('https://kaloyan.tech/' , '_self')
@@ -26,13 +19,15 @@ function setTheme(themeName) {
 document.getElementById('dw_btn').addEventListener('click' , function () {
     if (localStorage.getItem('theme') === 'theme-dark') {
         setTheme('theme-light');
-        tog.setAttribute('src' , strtb)
-        logo.setAttribute('src' , strlb)
+        for(var i = 0; i < logos.length; ++i){
+            logos[i].style.filter = 'invert(100%) drop-shadow(5px 5px 5px var(--color-img))'
+        }
         themed = false;
     } else {
+        for(var i = 0; i < logos.length; ++i){
+            logos[i].style.filter = 'invert(0%) drop-shadow(5px 5px 5px var(--color-img))'
+        }
         setTheme('theme-dark');
-        tog.setAttribute('src' , strtw)
-        logo.setAttribute('src' , strlw)
         themed = true;
     }
 });
@@ -45,8 +40,9 @@ document.getElementById('dw_btn').addEventListener('click' , function () {
         themed = true;
     } else {
         setTheme('theme-light');
-        tog.setAttribute('src' , strtb)
-        logo.setAttribute('src' , strlb)
+        for(var i = 0; i < logos.length; ++i){
+            logos[i].style.filter = 'invert(100%) drop-shadow(5px 5px 5px var(--color-img))'
+        }
         themed = false;
     }
 })();   
