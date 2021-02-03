@@ -9,30 +9,35 @@
 
     <title>Stopwatch</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../../css/mrWorldwide.css">
-    <link rel="icon" href="../img/sw-logo.png">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="icon" href="../../img/logo.png">
     
 </head>
 <body id="body">
-    <div id="content">
-        <header id="hh">
-            <div class="container">
+    <header class="hh"  data-aos="zoom-in-up">
+        <div class="hhi">
+            <div class="div sqr">
+                <img id='lg' class="logos" src="../../img/logo-site-trans-w.png" alt="Kaloyan Doychinov Logo">
+            </div>
+            <div class="container div">
                 <div id="navy" class="nav">
-                    <a class="navlink" href="../..">Home</a>
-                    <h3 id="title">To-do</h3>
                     <a class="navlink" href="..">Projects</a>
+                    <h3 id="title">Home</h3>
+                    <a class="navlink" href="../..">About</a>
                 </div>
             </div>
-        </header>
-        <div id="content">
-            <div>
-                <h1>Stopwatch ⏲</h1>
-                <h2 id="stopwatch">00:00:00</h2>
-                <button id="toggle">Start</button>
+            <div id="dw_btn" class="div sqr">
+                <img id="toggle" class="logos" src="../../img/settings.png" alt="Settings Icon">
             </div>
-
         </div>
+    </header>
+    <div id="content">
+        <div>
+            <h1>Stopwatch ⏲</h1>
+            <h2 id="stopwatch">00:00:00</h2>
+            <button id="toggle">Start</button>
+        </div>
+
     </div>
 
     <script src="watch.js"></script>
