@@ -1,11 +1,11 @@
-.content{
+.content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: calc(100% - 130px);
-    margin-left: 60px; 
+    margin-left: 60px;
 }
 
-.pr{
+.pr {
     padding: 0 0;
     padding: 10px;
     cursor: pointer;
@@ -13,26 +13,26 @@
     margin-right: 10px;
 }
 
-.pr img{
+.pr img {
     width: 100%;
-    border-radius: 10px; 
+    border-radius: 10px;
     filter: drop-shadow(5px 5px 5px var(--color-img));
 }
 
-h3{
+h3 {
     margin-top: 5px;
     font-size: 20px;
 }
 
-@media screen and (max-width: 681px){
-    .content{
+@media screen and (max-width: 681px) {
+    .content {
         width: unset;
         grid-template-columns: repeat(1, 1fr) !important;
         margin: unset;
         margin-bottom: -10px;
     }
-    .pr{
+
+    .pr {
         margin-right: 0px;
     }
-    
 }

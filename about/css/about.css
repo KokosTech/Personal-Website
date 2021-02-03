@@ -1,25 +1,25 @@
-body{
+body {
     height: unset;
 }
 
-#content{
+#content {
     height: unset;
 }
 
 /* Contact  */
 
-#cont{
+#cont {
     margin-top: 10px;
 }
 
-#c{
+#c {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.fc{
+.fc {
     margin: 10px;
     width: 18%;
     min-width: min-content;
@@ -35,50 +35,50 @@ body{
     border-radius: unset;
 }
 
-.fc p{
+.fc p {
     font-size: 17px;
 }
 
 /* Bio */
 
-#bio{
-   width: 100%; 
-   margin-right: 10px;
+#bio {
+    width: 100%;
+    margin-right: 10px;
 }
 
-#bioh{
+#bioh {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#qi{
+#qi {
     width: 35%;
 }
 
-#pp{
+#pp {
     width: 100%;
 }
 
-#qi img{
+#qi img {
     width: 100%;
     margin: 0 0;
     padding: 0 0;
-    filter: drop-shadow(3px 3px 3px var(--color-img))
+    filter: drop-shadow(3px 3px 3px var(--color-img));
 }
 
-#qi p{
+#qi p {
     font-size: 23px;
     margin-top: 10px;
 }
 
-#bio p{
-    font-family: 'Product Sans Regular';
+#bio p {
+    font-family: "Product Sans Regular";
     font-size: 23px;
     margin-top: 10px;
 }
 
-.bio{
+.bio {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,36 +86,36 @@ body{
 
 /* Global */
 
-@media screen and (max-width: 800px){
-    #contact{
+@media screen and (max-width: 800px) {
+    #contact {
         flex-direction: column;
     }
 
-    #portrait{
+    #portrait {
         width: unset;
         margin-right: 0;
     }
-    
-    #portrait img{
+
+    #portrait img {
         width: 100%;
     }
-    
-    #cont{
+
+    #cont {
         margin-top: 10px;
         width: unset;
     }
 
-    #bio{
+    #bio {
         width: unset;
         margin: 0 0;
         margin-top: 10px;
     }
 
-    #bioh{
+    #bioh {
         flex-direction: column-reverse;
     }
 
-    #qi{
+    #qi {
         width: unset;
     }
 }

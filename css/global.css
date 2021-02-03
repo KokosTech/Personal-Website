@@ -1,26 +1,26 @@
 @font-face {
-    font-family: 'Product Sans Black Regular';
+    font-family: "Product Sans Black Regular";
     font-style: normal;
     font-weight: normal;
-    src: local('Product Sans Black Regular'), url('../fonts/ProductSans-Black.woff') format('woff');
+    src: local("Product Sans Black Regular"),
+        url("../fonts/ProductSans-Black.woff") format("woff");
 }
 
-@font-face{
-    font-family: 'Product Sans Regular';
+@font-face {
+    font-family: "Product Sans Regular";
     font-style: normal;
     font-weight: normal;
-    src: local('Product Sans Black Regular'), url('../fonts/ProductSans-Regular.woff') format('woff');
-
+    src: local("Product Sans Black Regular"),
+        url("../fonts/ProductSans-Regular.woff") format("woff");
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     display: none;
 }
-
 
 .theme-light {
     --color-primary: #ffffffc2;
@@ -44,30 +44,34 @@
     transition: ease-in 250ms;
 }
 
-*{
+* {
     color: var(--color-font) !important;
-    font-family: 'Product Sans Black Regular' !important;
+    font-family: "Product Sans Black Regular" !important;
 }
 
-html{
-
+html {
     background-color: var(--color-background);
     margin: 0 0;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, a{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
     margin: 0 0;
     text-decoration: none;
 }
 
-
-
-.div{
+.div {
     background-color: var(--color-primary);
     box-shadow: 0px 0px 10px var(--color-shadow);
     border-radius: 13px;
@@ -75,22 +79,22 @@ h1, h2, h3, h4, h5, h6, p, a{
     backdrop-filter: blur(25px);
 }
 
-.divbtn{
+.divbtn {
     transition: 500ms;
 }
 
-.divbtn:hover{
+.divbtn:hover {
     box-shadow: 5px 5px 10px 1px var(--color-box-shadow);
     transition: 500ms;
 }
 
-.div img{
+.div img {
     border-radius: 10px;
 }
 
 /* Navigation */
 
-.nav{
+.nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -98,7 +102,7 @@ h1, h2, h3, h4, h5, h6, p, a{
     height: 100%;
 }
 
-.container{
+.container {
     width: 100%;
     margin-left: 10px;
     margin-right: 10px;
@@ -107,25 +111,25 @@ h1, h2, h3, h4, h5, h6, p, a{
     padding: 10px;
 }
 
-.navlink{
+.navlink {
     font-size: 20px;
 }
 
-.sqr{
+.sqr {
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
 
-.sqr img{
+.sqr img {
     height: 100%;
 }
 
-#title{
+#title {
     font-size: 30px;
 }
 
-.hh{
+.hh {
     position: fixed;
     display: block;
     width: 100%;
@@ -134,7 +138,7 @@ h1, h2, h3, h4, h5, h6, p, a{
     z-index: 100;
 }
 
-.hhi{
+.hhi {
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
@@ -143,7 +147,7 @@ h1, h2, h3, h4, h5, h6, p, a{
 
 /* Content */
 
-#content{
+#content {
     padding-top: 70px;
     padding-left: 10px;
     padding-right: 10px;
@@ -151,16 +155,14 @@ h1, h2, h3, h4, h5, h6, p, a{
 
 /* Global */
 
-@media screen and (max-width: 800px){
-    .container{
+@media screen and (max-width: 800px) {
+    .container {
         margin-left: 8.305px;
         margin-right: 8.305px;
     }
 
-    .hh1{
+    .hh1 {
         padding-left: 8.305px;
         padding-right: 8.305px;
     }
-
-    
 }

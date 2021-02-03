@@ -1,14 +1,12 @@
-
-
-.content h1{
+.content h1 {
     font-size: 60px;
 }
 
-.content h2{
+.content h2 {
     font-size: 45px;
 }
 
-#fpt{
+#fpt {
     height: calc(100vh - 140px);
     text-align: left;
     display: flex;
@@ -18,7 +16,7 @@
     justify-content: center;
 }
 
-#fpt a{
+#fpt a {
     position: absolute;
     bottom: 70px;
     right: 50;
@@ -26,4 +24,3 @@
     font-size: 20px;
     padding: 10px;
 }
-

@@ -1,28 +1,28 @@
- function Stopwatch(elem){
+function Stopwatch(elem) {
     var time = 0;
     var interval;
     var offset;
     this.status = 0;
 
-    function update(){
-        if(this.status === 1){
+    function update() {
+        if (this.status === 1) {
             time += delta();
         }
         elem.textContent = format(time);
-    };
-    function delta(){
+    }
+    function delta() {
         var now = Date.now();
         var passed = now - offset;
         offset = now;
         return passed;
-    };
-    function format(timeInMilliSeconds){
+    }
+    function format(timeInMilliSeconds) {
         var time = new Date(timeInMilliSeconds);
         var hours = time.getUTCHours().toString();
         var minutes = time.getMinutes().toString();
         var seconds = time.getSeconds().toString();
         var milliseconds = time.getMilliseconds().toString();
-    
+
         if (hours.length < 2) {
             hours = "0" + hours;
         }
@@ -36,21 +36,21 @@
             milliseconds = "0" + milliseconds;
         }
         return hours + ":" + minutes + ":" + seconds;
-    };
+    }
 
-    this.s = function(){
+    this.s = function () {
         interval = setInterval(update.bind(this), 10);
         offset = Date.now();
         this.status = 1;
     };
-    this.st = function(){
-            clearInterval();
-            interval = null;
-            this.status = 2;
+    this.st = function () {
+        clearInterval();
+        interval = null;
+        this.status = 2;
     };
-    this.r = function(){
-            time = 0;
-            update();
-            this.status = 0;
+    this.r = function () {
+        time = 0;
+        update();
+        this.status = 0;
     };
-};
+}
